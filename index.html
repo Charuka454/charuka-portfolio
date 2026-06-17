@@ -4,133 +4,223 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Charuka Wimalarathna | Full Stack Developer</title>
+<meta name="description" content="Charuka Wimalarathna — Full-Stack Developer & Software Engineering student building modern web applications.">
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-<nav>
-<div class="logo">Charuka</div>
+<!-- background grid + noise layer -->
+<div class="bp-grid" aria-hidden="true"></div>
 
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
+<header class="site-header">
+<nav class="nav-wrap">
+<a href="#home" class="logo">Charuka<span class="logo-dot">.</span></a>
+
+<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home"><span class="idx">00</span>Home</a></li>
+<li><a href="#about"><span class="idx">01</span>About</a></li>
+<li><a href="#skills"><span class="idx">02</span>Stack</a></li>
+<li><a href="#projects"><span class="idx">03</span>Builds</a></li>
+<li><a href="#contact"><span class="idx">04</span>Contact</a></li>
 </ul>
+
+<a href="resume.pdf" class="btn-pill" target="_blank">Resume</a>
 </nav>
 </header>
 
+<main>
+
 <section id="home" class="hero">
 
-<div class="hero-content">
+<div class="hero-grid">
 
 <div class="hero-text">
-<h1>Hi, I'm Charuka</h1>
+<p class="eyebrow">Portfolio &mdash; Rev. 2026</p>
 
-<h2>Full Stack Developer</h2>
+<h1>Charuka<br>Wimalarathna</h1>
 
-<p>
-Passionate Software Engineering student focused on building modern web applications and solving real-world problems through technology.
+<h2 class="role-line"><span class="role-text">Full-Stack Developer</span><span class="cursor" aria-hidden="true"></span></h2>
+
+<p class="lede">
+Software Engineering student building full-stack web applications and
+solving real-world problems through clean, reliable code.
 </p>
 
 <div class="buttons">
-<a href="#contact" class="btn">Hire Me</a>
-<a href="resume.pdf" class="btn-outline" target="_blank">Download CV</a>
+<a href="#contact" class="btn-solid">Hire Me</a>
+<a href="resume.pdf" class="btn-line" target="_blank">Download CV</a>
 </div>
 </div>
 
-<div class="hero-image">
-<img src="images/profile.jpg" alt="Charuka">
+<div class="hero-figure">
+<div class="frame-wrap" id="frameWrap">
+<svg class="frame-svg" viewBox="0 0 340 400" preserveAspectRatio="none" aria-hidden="true">
+<polyline class="corner draw" points="2,40 2,2 40,2"></polyline>
+<polyline class="corner draw" points="300,2 338,2 338,40"></polyline>
+<polyline class="corner draw" points="338,360 338,398 300,398"></polyline>
+<polyline class="corner draw" points="40,398 2,398 2,360"></polyline>
+</svg>
+<img src="images/profile.jpg" alt="Portrait of Charuka Wimalarathna">
+
+<div class="info-bar">
+<span class="info-status"><span class="dot" aria-hidden="true"></span>Open to Work</span>
+<span class="info-loc">Kurunegala, LK</span>
+</div>
+</div>
+<p class="scale-note">FIG. 01 &middot; SCALE 1:1</p>
 </div>
 
 </div>
-
 </section>
 
 <section id="about">
+<div class="crosshair tl" aria-hidden="true">+</div>
 
+<p class="eyebrow">Index 01 &mdash; Profile</p>
 <h2 class="section-title">About Me</h2>
 
-<p>
-I am a motivated and dedicated Software Engineering student at NIBM. I have experience developing full-stack applications using React, Flask, PHP, JavaScript, MySQL, MongoDB, and modern frameworks. I enjoy creating user-friendly solutions and continuously improving my technical skills.
+<div class="about-grid">
+<p class="about-copy">
+I'm a motivated Software Engineering student at NIBM with hands-on experience
+building full-stack applications using React, Flask, PHP, JavaScript, MySQL
+and MongoDB. I care about writing clean, dependable code and turning real
+problems into software that's actually pleasant to use &mdash; and I'm always
+working on getting better at the craft.
 </p>
 
+<dl class="spec-panel">
+<div class="spec-row"><dt>Role</dt><dd>Full-Stack Developer</dd></div>
+<div class="spec-row"><dt>Education</dt><dd>NIBM &mdash; Software Engineering</dd></div>
+<div class="spec-row"><dt>Focus</dt><dd>Web Apps &amp; Systems</dd></div>
+<div class="spec-row"><dt>Based</dt><dd>Kurunegala, Sri Lanka</dd></div>
+<div class="spec-row"><dt>Status</dt><dd class="accent-text">Open to Work</dd></div>
+</dl>
+</div>
 </section>
 
 <section id="skills">
+<div class="crosshair tl" aria-hidden="true">+</div>
 
-<h2 class="section-title">Skills</h2>
+<p class="eyebrow">Index 02 &mdash; Stack</p>
+<h2 class="section-title">Technical Stack</h2>
 
-<div class="skills-grid">
+<div class="module-grid">
 
-<span>Python</span>
-<span>Java</span>
-<span>JavaScript</span>
-<span>C#</span>
-<span>React</span>
-<span>Node.js</span>
-<span>Spring Boot</span>
-<span>Laravel</span>
-<span>Django</span>
-<span>PHP</span>
-<span>MySQL</span>
-<span>MongoDB</span>
-<span>Firebase</span>
-<span>Tailwind CSS</span>
-
+<div class="module">
+<p class="module-head"><span>MOD.01</span>Languages</p>
+<div class="chip-row">
+<span>Python</span><span>Java</span><span>JavaScript</span><span>C#</span><span>PHP</span>
+</div>
 </div>
 
+<div class="module">
+<p class="module-head"><span>MOD.02</span>Frontend</p>
+<div class="chip-row">
+<span>React</span><span>Tailwind CSS</span><span>HTML / CSS</span>
+</div>
+</div>
+
+<div class="module">
+<p class="module-head"><span>MOD.03</span>Backend</p>
+<div class="chip-row">
+<span>Node.js</span><span>Spring Boot</span><span>Laravel</span><span>Django</span>
+</div>
+</div>
+
+<div class="module">
+<p class="module-head"><span>MOD.04</span>Data &amp; Infra</p>
+<div class="chip-row">
+<span>MySQL</span><span>MongoDB</span><span>Firebase</span>
+</div>
+</div>
+
+</div>
 </section>
 
 <section id="projects">
+<div class="crosshair tl" aria-hidden="true">+</div>
 
+<p class="eyebrow">Index 03 &mdash; Builds</p>
 <h2 class="section-title">Projects</h2>
 
-<div class="project-card">
+<div class="project-list">
+
+<article class="project-card">
+<p class="project-id">PRJ&#8209;01</p>
 <h3>Smart Gadget Marketplace</h3>
-<p>
-Full-stack e-commerce system built with Flask, Oracle DB and MongoDB featuring authentication, shopping cart, inventory management and reviews.
-</p>
+<p>Full-stack e-commerce system built with Flask, Oracle DB and MongoDB, featuring authentication, a shopping cart, inventory management and customer reviews.</p>
+<div class="chip-row small">
+<span>Flask</span><span>Oracle DB</span><span>MongoDB</span>
 </div>
+</article>
 
-<div class="project-card">
+<article class="project-card">
+<p class="project-id">PRJ&#8209;02</p>
 <h3>Kandu Pinnawala Hand Crafting Shop</h3>
-<p>
-Responsive e-commerce platform developed using React, PHP, HTML and CSS.
-</p>
+<p>Responsive e-commerce platform for a handcraft business, developed using React, PHP, HTML and CSS.</p>
+<div class="chip-row small">
+<span>React</span><span>PHP</span><span>HTML / CSS</span>
 </div>
+</article>
 
-<div class="project-card">
+<article class="project-card">
+<p class="project-id">PRJ&#8209;03</p>
 <h3>Restaurant Management System</h3>
-<p>
-Flask-based application using SQLite with order management, route optimization and Dijkstra algorithm.
-</p>
+<p>Flask-based application using SQLite, handling order management with route optimization powered by Dijkstra's algorithm.</p>
+<div class="chip-row small">
+<span>Flask</span><span>SQLite</span><span>Dijkstra Algorithm</span>
 </div>
+</article>
 
+</div>
 </section>
 
 <section id="contact">
+<div class="crosshair tl" aria-hidden="true">+</div>
 
-<h2 class="section-title">Contact</h2>
+<p class="eyebrow">Index 04 &mdash; Contact</p>
+<h2 class="section-title">Let's Build Something</h2>
 
-<p>Email: charukawimalarathne@gmail.com</p>
+<div class="contact-block">
 
-<p>Phone: +94 743654966</p>
+<div class="contact-left">
+<p class="contact-intro">Open to internships, freelance work and full-stack roles. Reach out and I'll get back to you.</p>
+<a href="mailto:charukawimalarathne@gmail.com" class="btn-solid">Send an Email</a>
+</div>
 
-<p>Location: Kurunegala, Sri Lanka</p>
+<dl class="title-block">
+<div class="tb-row">
+<dt>Email</dt>
+<dd><a href="mailto:charukawimalarathne@gmail.com">charukawimalarathne@<wbr>gmail.com</a></dd>
+</div>
+<div class="tb-row">
+<dt>Phone</dt>
+<dd><a href="tel:+94743654966">+94 74 365 4966</a></dd>
+</div>
+<div class="tb-row">
+<dt>Location</dt>
+<dd>Kurunegala, Sri Lanka</dd>
+</div>
+</dl>
 
+</div>
 </section>
 
+</main>
+
 <footer>
-<p>© 2026 Charuka Wimalarathna</p>
+<p>Drawn by Charuka Wimalarathna &nbsp;&middot;&nbsp; Scale 1:1 &nbsp;&middot;&nbsp; &copy; 2026</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
